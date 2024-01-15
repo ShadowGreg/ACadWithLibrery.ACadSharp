@@ -52,7 +52,7 @@ public class Program
                 //Console.WriteLine($"\t\t{e.ObjectName}: {e.Value}");
                 if (textDictionary.TryAdd(e.Value, e.Value))
                 {
-                    if (e.Value.Equals(text))
+                    if (e.Value.Contains(text))
                     {
                         Console.WriteLine(path + " ----> " + e.Value);
                     }
