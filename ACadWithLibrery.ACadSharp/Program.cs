@@ -15,7 +15,8 @@ public class Program
     {
         Console.WriteLine(
             "Input path and text for search between spaces. For example: C:\\Users\\shado\\OneDrive\\Desktop 273,1х9,3-PW-10-1003-C-РР-2.5 >");
-        args = Console.ReadLine().Split(" ");
+        Console.WriteLine("The path must be like: C:\\Users\\shado\\OneDrive\\Desktop wit out spaces");
+        
         if (args.Length == 2)
         {
             string path = args[0];
@@ -30,6 +31,23 @@ public class Program
                     SearchInFile(file, args[1]);
             }
 
+            Console.ReadKey();
+        } else if(args.Length == 0)
+        {
+            Console.WriteLine("Enter path: >");
+            var path = Console.ReadLine();
+            Console.WriteLine("Enter text: >");
+            var search = Console.ReadLine();
+            
+            List<string> dwgFiles = new();
+            CollectDwgFiles(path, dwgFiles);
+            Console.WriteLine("Middle files: ");
+            foreach (string file in dwgFiles)
+            {
+                Console.Write("-");
+                if (!file.Contains("path"))
+                    SearchInFile(file,search);
+            }
             Console.ReadKey();
         }
 
