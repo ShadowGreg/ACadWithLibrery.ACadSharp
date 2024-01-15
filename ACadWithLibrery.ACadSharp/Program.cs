@@ -9,22 +9,29 @@ public class Program {
         Console.WriteLine(e.Message);
     }
 
-    public static void Main() {
-        string path = "C:\\Users\\shado\\OneDrive\\Desktop";
-        List<string> dwgFiles = new();
-        CollectDwgFiles(path, dwgFiles);
-        Console.WriteLine("Middle files: ");
-        dwgFiles.Remove(path);
-        foreach (string file in dwgFiles) {
-            Console.WriteLine(file);
-            if (!file.Contains("path"))
-                SearchInFile(file);
+    public static void Main(string[] args) {
+        Console.WriteLine(
+            "Input path and text for search between spaces. For example: C:\\Users\\shado\\OneDrive\\Desktop 273,1х9,3-PW-10-1003-C-РР-2.5 >"  );
+        args = Console.ReadLine().Split(" ");
+        if (args.Length == 2) {
+            string path = args[0];
+            List<string> dwgFiles = new();
+            CollectDwgFiles(path, dwgFiles);
+            Console.WriteLine("Middle files: ");
+            dwgFiles.Remove(path);
+            foreach (string file in dwgFiles) {
+                Console.WriteLine(file);
+                if (!file.Contains("path"))
+                    SearchInFile(file, args[1]);
+            }
+
+            Console.ReadKey();
         }
 
-        Console.ReadKey();
+        Console.WriteLine("Not enough arguments. Restart the program");
     }
 
-    private static void SearchInFile(string path) {
+    private static void SearchInFile(string path, string text = "273,1х9,3-PW-10-1003-C-РР-2.5") {
         CadDocument doc = DwgReader.Read(path);
         var entities = doc.Entities;
         // foreach (var e in entities.GroupBy(i => i.GetType().FullName))
@@ -36,7 +43,7 @@ public class Program {
         foreach (var e in textEntities) {
             //Console.WriteLine($"\t\t{e.ObjectName}: {e.Value}");
             if (textDictionary.TryAdd(e.Value, e.Value)) {
-                if (e.Value.Equals("273,1х9,3-PW-10-1003-C-РР-2.5")) {
+                if (e.Value.Equals(text)) {
                     Console.WriteLine(path + " ----> " + e.Value);
                 }
             }

@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACadWithLibrery.ACadSharp", "ACadWithLibrery.ACadSharp\ACadWithLibrery.ACadSharp.csproj", "{9D460D2D-263A-4498-B433-0A0B16C4D60B}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34414.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACadWithLibrery.ACadSharp", "ACadWithLibrery.ACadSharp\ACadWithLibrery.ACadSharp.csproj", "{9D460D2D-263A-4498-B433-0A0B16C4D60B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACadSharp", "C:\workspace\ACadSharp\ACadSharp\ACadSharp.csproj", "{89F61E70-9522-4F6E-826F-B4715E47810C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACadSharp", "C:\workspace\ACadSharp\ACadSharp\ACadSharp.csproj", "{89F61E70-9522-4F6E-826F-B4715E47810C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,12 @@ Global
 		{89F61E70-9522-4F6E-826F-B4715E47810C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89F61E70-9522-4F6E-826F-B4715E47810C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89F61E70-9522-4F6E-826F-B4715E47810C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		C:\workspace\ACadSharp\CSUtilities\CSMath\CSMath.projitems*{89f61e70-9522-4f6e-826f-b4715e47810c}*SharedItemsImports = 5
+		C:\workspace\ACadSharp\CSUtilities\CSUtilities\CSUtilities.projitems*{89f61e70-9522-4f6e-826f-b4715e47810c}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
