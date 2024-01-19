@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACadWithLibrery.ACadSharp",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACadSharp", "C:\workspace\ACadSharp\ACadSharp\ACadSharp.csproj", "{89F61E70-9522-4F6E-826F-B4715E47810C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{0E18D8AC-D6D6-4BF8-83B1-33BD736F6947}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{89F61E70-9522-4F6E-826F-B4715E47810C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89F61E70-9522-4F6E-826F-B4715E47810C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89F61E70-9522-4F6E-826F-B4715E47810C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E18D8AC-D6D6-4BF8-83B1-33BD736F6947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E18D8AC-D6D6-4BF8-83B1-33BD736F6947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E18D8AC-D6D6-4BF8-83B1-33BD736F6947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E18D8AC-D6D6-4BF8-83B1-33BD736F6947}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
