@@ -6,5 +6,5 @@ public interface ITextSearchInFiles {
     /// </summary>
     /// <param name="text"></param>
     /// <returns></returns>
-    public string SearchInFile(string text);
+    public string? SearchInFile(string text);
 }

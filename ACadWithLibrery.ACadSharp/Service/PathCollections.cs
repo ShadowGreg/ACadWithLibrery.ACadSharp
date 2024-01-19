@@ -36,15 +36,11 @@ public class PathCollections : IEndPathSearcher {
 
             string[] files = await Task.Run(() => Directory.GetFiles(currentPath, fileExtension));
 
-            foreach (string file in files) {
-                dwgFiles.Add(file);
-            }
+            Parallel.ForEach(files, file => { dwgFiles.Add(file); });
 
             string[] directories = await Task.Run(() => Directory.GetDirectories(currentPath));
 
-            foreach (string directory in directories) {
-                stack.Push(directory);
-            }
+            Parallel.ForEach(directories, directory => { stack.Push(directory); });
         }
 
         return dwgFiles;

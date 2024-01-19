@@ -1,2 +1,8 @@
 2024-01-19 10:57:12 - SearchFullPath: 6 ms
 2024-01-19 10:57:12 - SearchFullPathAsync: 6 ms
+2024-01-19 11:01:26 - SearchFullPath: 563 ms
+2024-01-19 11:01:26 - SearchFullPathAsync: 596 ms
+2024-01-19 11:04:12 - SearchFullPath: 682 ms
+2024-01-19 11:04:13 - SearchFullPathAsync: 507 ms
+2024-01-19 11:05:11 - SearchFullPath: 4 ms
+2024-01-19 11:05:11 - SearchFullPathAsync: 8 ms

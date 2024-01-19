@@ -18,8 +18,8 @@ public class PathCollectionsTests {
         stopwatch.Stop();
 
         // Assert
-        Assert.Equal(expectedFileCount, actualFiles.Count);
         SaveExecutionTime("SearchFullPath", stopwatch.ElapsedMilliseconds);
+        Assert.Equal(expectedFileCount, actualFiles.Count);
     }
 
     [Fact]
@@ -34,8 +34,8 @@ public class PathCollectionsTests {
         stopwatch.Stop();
 
         // Assert
-        Assert.Equal(expectedFileCount, actualFiles.Count);
         SaveExecutionTime("SearchFullPathAsync", stopwatch.ElapsedMilliseconds);
+        Assert.Equal(expectedFileCount, actualFiles.Count);
     }
 
     private void SaveExecutionTime(string methodName, long executionTime) {
